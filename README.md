@@ -1,6 +1,8 @@
 Laravel UPS Api (In Development)
 =================
 
+[![Build Status](https://travis-ci.org/rooferz/Laravel-UPS-Api.svg?branch=master)](https://travis-ci.org/rooferz/Laravel-UPS-Api)
+
 Laravel UPS Api was created by, and is maintained by [Pierre Tondereau](https://github.com/rooferz), and PHP UPS Api was created by, and is maintained by [Gabriel Bull](https://github.com/gabrielbull) at [PHP UPS API](https://github.com/gabrielbull). Feel free to check out the [change log](CHANGELOG.md), [releases](https://github.com/rooferz/Laravel-UPS-Api/releases), [license](LICENSE), and [contribution guidelines](CONTRIBUTING.md).
 
 ## Installation
