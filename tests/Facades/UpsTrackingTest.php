@@ -1,10 +1,10 @@
 <?php
 
-namespace Rooferz\Tests\LaravelUpsApi\Facades;
+namespace Ptondereau\Tests\LaravelUpsApi\Facades;
 
 use GrahamCampbell\TestBenchCore\FacadeTrait;
-use Rooferz\LaravelUpsApi\Facades\UpsTracking;
-use Rooferz\Tests\LaravelUpsApi\TestCase;
+use Ptondereau\LaravelUpsApi\Facades\UpsTracking;
+use Ptondereau\Tests\LaravelUpsApi\TestCase;
 use Ups\Tracking;
 
 /**

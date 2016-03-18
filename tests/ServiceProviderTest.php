@@ -1,6 +1,6 @@
 <?php
 
-namespace Rooferz\Tests\LaravelUpsApi;
+namespace Ptondereau\Tests\LaravelUpsApi;
 
 use GrahamCampbell\TestBenchCore\ServiceProviderTrait;
 use Ups\AddressValidation;

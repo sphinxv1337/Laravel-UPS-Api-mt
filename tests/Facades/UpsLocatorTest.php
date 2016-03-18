@@ -1,10 +1,10 @@
 <?php
 
-namespace Rooferz\Tests\LaravelUpsApi\Facades;
+namespace Ptondereau\Tests\LaravelUpsApi\Facades;
 
 use GrahamCampbell\TestBenchCore\FacadeTrait;
-use Rooferz\LaravelUpsApi\Facades\UpsLocator;
-use Rooferz\Tests\LaravelUpsApi\TestCase;
+use Ptondereau\LaravelUpsApi\Facades\UpsLocator;
+use Ptondereau\Tests\LaravelUpsApi\TestCase;
 use Ups\Locator;
 
 /**

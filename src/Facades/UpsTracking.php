@@ -1,6 +1,6 @@
 <?php
 
-namespace Rooferz\LaravelUpsApi\Facades;
+namespace Ptondereau\LaravelUpsApi\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace Rooferz\Tests\LaravelUpsApi\Facades;
+namespace Ptondereau\Tests\LaravelUpsApi\Facades;
 
 use GrahamCampbell\TestBenchCore\FacadeTrait;
-use Rooferz\LaravelUpsApi\Facades\UpsTimeInTransit;
-use Rooferz\Tests\LaravelUpsApi\TestCase;
+use Ptondereau\LaravelUpsApi\Facades\UpsTimeInTransit;
+use Ptondereau\Tests\LaravelUpsApi\TestCase;
 use Ups\TimeInTransit;
 
 /**

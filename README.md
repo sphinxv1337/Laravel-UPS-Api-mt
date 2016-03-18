@@ -3,16 +3,15 @@ Laravel UPS Api
 
 ## For Laravel 5.1 & 5.2
 
-[![Build Status](https://travis-ci.org/rooferz/Laravel-UPS-Api.svg?branch=master)](https://travis-ci.org/rooferz/Laravel-UPS-Api)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/rooferz/Laravel-UPS-Api/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/rooferz/Laravel-UPS-Api/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/rooferz/Laravel-UPS-Api/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/rooferz/Laravel-UPS-Api/?branch=master)
+[![Build Status](https://travis-ci.org/ptondereau/Laravel-UPS-Api.svg?branch=master)](https://travis-ci.org/ptondereau/Laravel-UPS-Api)[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Ptondereau/Laravel-UPS-Api/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Ptondereau/Laravel-UPS-Api/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/Ptondereau/Laravel-UPS-Api/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/Ptondereau/Laravel-UPS-Api/?branch=master)
 [![StyleCI](https://styleci.io/repos/54156171/shield)](https://styleci.io/repos/54156171)
-[![Code Climate](https://codeclimate.com/github/rooferz/Laravel-UPS-Api/badges/gpa.svg)](https://codeclimate.com/github/rooferz/Laravel-UPS-Api)
-[![Latest Stable Version](https://poser.pugx.org/rooferz/laravel-ups-api/v/stable)](https://packagist.org/packages/rooferz/laravel-ups-api)
-[![Latest Unstable Version](https://poser.pugx.org/rooferz/laravel-ups-api/v/unstable)](https://packagist.org/packages/rooferz/laravel-ups-api)
-[![License](https://poser.pugx.org/rooferz/laravel-ups-api/license)](https://packagist.org/packages/rooferz/laravel-ups-api)
+[![Code Climate](https://codeclimate.com/github/Ptondereau/Laravel-UPS-Api/badges/gpa.svg)](https://codeclimate.com/github/Ptondereau/Laravel-UPS-Api)
+[![Latest Stable Version](https://poser.pugx.org/Ptondereau/laravel-ups-api/v/stable)](https://packagist.org/packages/Ptondereau/laravel-ups-api)
+[![Latest Unstable Version](https://poser.pugx.org/Ptondereau/laravel-ups-api/v/unstable)](https://packagist.org/packages/Ptondereau/laravel-ups-api)
+[![License](https://poser.pugx.org/Ptondereau/laravel-ups-api/license)](https://packagist.org/packages/Ptondereau/laravel-ups-api)
 
-Laravel UPS Api was created by, and is maintained by [Pierre Tondereau](https://github.com/rooferz), and PHP UPS Api was created by, and is maintained by [Gabriel Bull](https://github.com/gabrielbull) at [PHP UPS API](https://github.com/gabrielbull/php-ups-api). Feel free to check out the [change log](CHANGELOG.md), [releases](https://github.com/rooferz/Laravel-UPS-Api/releases), [license](LICENSE), and [contribution guidelines](CONTRIBUTING.md).
+Laravel UPS Api was created by, and is maintained by [Pierre Tondereau](https://github.com/Ptondereau), and PHP UPS Api was created by, and is maintained by [Gabriel Bull](https://github.com/gabrielbull) at [PHP UPS API](https://github.com/gabrielbull/php-ups-api). Feel free to check out the [change log](CHANGELOG.md), [releases](https://github.com/Ptondereau/Laravel-UPS-Api/releases), [license](LICENSE), and [contribution guidelines](CONTRIBUTING.md).
 
 ## Installation
 
@@ -21,7 +20,7 @@ Either [PHP](https://php.net) 5.5+ or [HHVM](http://hhvm.com) 3.6+ are required.
 To get the latest version of Laravel UPS Api, simply require the project using [Composer](https://getcomposer.org):
 
 ```bash
-$ composer require rooferz/laravel-ups-api
+$ composer require Ptondereau/laravel-ups-api
 ```
 
 Instead, you may of course manually update your require block and run `composer update` if you so choose:
@@ -29,24 +28,24 @@ Instead, you may of course manually update your require block and run `composer 
 ```json
 {
     "require": {
-        "rooferz/laravel-ups-api": "^1.0"
+        "Ptondereau/laravel-ups-api": "^1.0"
     }
 }
 ```
 
 Once Laravel UPS Api is installed, you need to register the service provider. Open up `config/app.php` and add the following to the `providers` key.
 
-* `'Rooferz\LaravelUpsApi\UpsApiServiceProvider'`
+* `'Ptondereau\LaravelUpsApi\UpsApiServiceProvider'`
 
 You can register the all or some Ups facade in the `aliases` key of your `config/app.php` file if you like.
 
-* `'UPSAddressValidator' => 'Rooferz\LaravelUpsApi\Facades\UpsAddressValidator'`
-* `'UPSLocator' => 'Rooferz\LaravelUpsApi\Facades\UpsLocator'`
-* `'UPSQuantumView' => 'Rooferz\LaravelUpsApi\Facades\UpsQuantumView'`
-* `'UPSRate' => 'Rooferz\LaravelUpsApi\Facades\UpsRate'`
-* `'UPSTimeInTransit' => 'Rooferz\LaravelUpsApi\Facades\UpsTimeInTransit'`
-* `'UPSTracking' => 'Rooferz\LaravelUpsApi\Facades\UpsTracking'`
-* `'UPSTradeability' => 'Rooferz\LaravelUpsApi\Facades\UpsTradeability'`
+* `'UPSAddressValidator' => 'Ptondereau\LaravelUpsApi\Facades\UpsAddressValidator'`
+* `'UPSLocator' => 'Ptondereau\LaravelUpsApi\Facades\UpsLocator'`
+* `'UPSQuantumView' => 'Ptondereau\LaravelUpsApi\Facades\UpsQuantumView'`
+* `'UPSRate' => 'Ptondereau\LaravelUpsApi\Facades\UpsRate'`
+* `'UPSTimeInTransit' => 'Ptondereau\LaravelUpsApi\Facades\UpsTimeInTransit'`
+* `'UPSTracking' => 'Ptondereau\LaravelUpsApi\Facades\UpsTracking'`
+* `'UPSTradeability' => 'Ptondereau\LaravelUpsApi\Facades\UpsTradeability'`
 
 
 ## Configuration
@@ -56,7 +55,7 @@ Laravel UPS Api requires connection configuration.
 To get started, you'll need to publish all vendor assets:
 
 ```bash
-$ php artisan vendor:publish --provider="Rooferz\LaravelUpsApi\UpsApiServiceProvider"
+$ php artisan vendor:publish --provider="Ptondereau\LaravelUpsApi\UpsApiServiceProvider"
 ```
 
 This will create a `config/ups.php` file in your app that you can modify to set your configuration. Also, make sure you check for changes to the original config file in this package between releases.

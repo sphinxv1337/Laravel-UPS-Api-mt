@@ -1,6 +1,6 @@
 <?php
 
-namespace Rooferz\Tests\LaravelUpsApi;
+namespace Ptondereau\Tests\LaravelUpsApi;
 
 use Illuminate\Support\Facades\Config;
 

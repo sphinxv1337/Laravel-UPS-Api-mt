@@ -1,6 +1,6 @@
 <?php
 
-namespace Rooferz\LaravelUpsApi;
+namespace Ptondereau\LaravelUpsApi;
 
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Support\ServiceProvider;
