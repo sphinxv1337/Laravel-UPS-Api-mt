@@ -2,9 +2,9 @@
 
 namespace Rooferz\Tests\LaravelUpsApi\Facades;
 
+use GrahamCampbell\TestBenchCore\FacadeTrait;
 use Rooferz\LaravelUpsApi\Facades\UpsTimeInTransit;
 use Rooferz\Tests\LaravelUpsApi\TestCase;
-use GrahamCampbell\TestBenchCore\FacadeTrait;
 use Ups\TimeInTransit;
 
 /**

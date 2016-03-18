@@ -2,6 +2,7 @@
 
 namespace Rooferz\Tests\LaravelUpsApi;
 
+use GrahamCampbell\TestBenchCore\ServiceProviderTrait;
 use Ups\AddressValidation;
 use Ups\Locator;
 use Ups\QuantumView;
@@ -9,7 +10,6 @@ use Ups\Rate;
 use Ups\TimeInTransit;
 use Ups\Tracking;
 use Ups\Tradeability;
-use GrahamCampbell\TestBenchCore\ServiceProviderTrait;
 
 /**
  * This is the service provider test class.

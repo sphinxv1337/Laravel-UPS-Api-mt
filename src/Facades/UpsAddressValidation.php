@@ -3,7 +3,6 @@
 namespace Rooferz\LaravelUpsApi\Facades;
 
 use Illuminate\Support\Facades\Facade;
-use Ups\AddressValidation;
 
 /**
  * This is the UpsAddressValidation facade class.

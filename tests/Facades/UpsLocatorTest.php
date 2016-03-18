@@ -2,9 +2,9 @@
 
 namespace Rooferz\Tests\LaravelUpsApi\Facades;
 
+use GrahamCampbell\TestBenchCore\FacadeTrait;
 use Rooferz\LaravelUpsApi\Facades\UpsLocator;
 use Rooferz\Tests\LaravelUpsApi\TestCase;
-use GrahamCampbell\TestBenchCore\FacadeTrait;
 use Ups\Locator;
 
 /**
