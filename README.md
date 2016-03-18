@@ -81,7 +81,7 @@ There are other classes in this package that are not documented here. This is be
 
 ## Security
 
-If you discover a security vulnerability within this package, please send an e-mail to Pierre Tondereau at pierre@doers.fr. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within this package, please send an e-mail to Pierre Tondereau at me@pierre-tondereau.com. All security vulnerabilities will be promptly addressed.
 
 
 ## License
