@@ -7,6 +7,10 @@ Laravel UPS Api
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/rooferz/Laravel-UPS-Api/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/rooferz/Laravel-UPS-Api/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/rooferz/Laravel-UPS-Api/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/rooferz/Laravel-UPS-Api/?branch=master)
 [![StyleCI](https://styleci.io/repos/54156171/shield)](https://styleci.io/repos/54156171)
+[![Code Climate](https://codeclimate.com/github/rooferz/Laravel-UPS-Api/badges/gpa.svg)](https://codeclimate.com/github/rooferz/Laravel-UPS-Api)
+[![Latest Stable Version](https://poser.pugx.org/rooferz/laravel-ups-api/v/stable)](https://packagist.org/packages/rooferz/laravel-ups-api)
+[![Latest Unstable Version](https://poser.pugx.org/rooferz/laravel-ups-api/v/unstable)](https://packagist.org/packages/rooferz/laravel-ups-api)
+[![License](https://poser.pugx.org/rooferz/laravel-ups-api/license)](https://packagist.org/packages/rooferz/laravel-ups-api)
 
 Laravel UPS Api was created by, and is maintained by [Pierre Tondereau](https://github.com/rooferz), and PHP UPS Api was created by, and is maintained by [Gabriel Bull](https://github.com/gabrielbull) at [PHP UPS API](https://github.com/gabrielbull/php-ups-api). Feel free to check out the [change log](CHANGELOG.md), [releases](https://github.com/rooferz/Laravel-UPS-Api/releases), [license](LICENSE), and [contribution guidelines](CONTRIBUTING.md).
 
@@ -68,7 +72,7 @@ UPS_PASSWORD=password
 ## Usage
 
 This package only inject and provide Facades for each class of [PHP UPS API](https://github.com/gabrielbull/php-ups-api).
-You just have read its documentation.
+You just have to read its documentation.
 
 
 ##### Further Information
