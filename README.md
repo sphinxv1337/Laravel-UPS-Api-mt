@@ -6,6 +6,7 @@ Laravel UPS Api
 [![Build Status](https://travis-ci.org/rooferz/Laravel-UPS-Api.svg?branch=master)](https://travis-ci.org/rooferz/Laravel-UPS-Api)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/rooferz/Laravel-UPS-Api/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/rooferz/Laravel-UPS-Api/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/rooferz/Laravel-UPS-Api/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/rooferz/Laravel-UPS-Api/?branch=master)
+[![StyleCI](https://styleci.io/repos/54156171/shield)](https://styleci.io/repos/54156171)
 
 Laravel UPS Api was created by, and is maintained by [Pierre Tondereau](https://github.com/rooferz), and PHP UPS Api was created by, and is maintained by [Gabriel Bull](https://github.com/gabrielbull) at [PHP UPS API](https://github.com/gabrielbull/php-ups-api). Feel free to check out the [change log](CHANGELOG.md), [releases](https://github.com/rooferz/Laravel-UPS-Api/releases), [license](LICENSE), and [contribution guidelines](CONTRIBUTING.md).
 
