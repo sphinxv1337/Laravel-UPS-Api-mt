@@ -2,8 +2,8 @@
 
 namespace Rooferz\Tests\LaravelUpsApi;
 
-use Rooferz\LaravelUpsApi\UpsApiServiceProvider;
 use GrahamCampbell\TestBench\AbstractPackageTestCase;
+use Rooferz\LaravelUpsApi\UpsApiServiceProvider;
 
 /**
  * This is the abstract test case class.

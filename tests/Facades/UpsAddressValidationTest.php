@@ -2,9 +2,9 @@
 
 namespace Rooferz\Tests\LaravelUpsApi\Facades;
 
-use Rooferz\Tests\LaravelUpsApi\TestCase;
-use Rooferz\LaravelUpsApi\Facades\UpsAddressValidation;
 use GrahamCampbell\TestBenchCore\FacadeTrait;
+use Rooferz\LaravelUpsApi\Facades\UpsAddressValidation;
+use Rooferz\Tests\LaravelUpsApi\TestCase;
 use Ups\AddressValidation;
 
 /**

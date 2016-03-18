@@ -52,7 +52,7 @@ class UpsApiServiceProvider extends ServiceProvider
      */
     protected function setupConfig()
     {
-        $source = realpath(__DIR__ . '/../config/ups.php');
+        $source = realpath(__DIR__.'/../config/ups.php');
         if ($this->app instanceof LaravelApplication && $this->app->runningInConsole()) {
             $this->publishes([$source => config_path('ups.php')]);
         } elseif ($this->app instanceof LumenApplication) {
@@ -62,7 +62,7 @@ class UpsApiServiceProvider extends ServiceProvider
     }
 
     /**
-     * Register the AddressValidation class
+     * Register the AddressValidation class.
      *
      * @return void
      */
@@ -70,12 +70,13 @@ class UpsApiServiceProvider extends ServiceProvider
     {
         $this->app->singleton('ups.address-validation', function (Container $app) {
             $config = $app->config->get('ups');
+
             return new AddressValidation($config['access_key'], $config['user_id'], $config['password']);
         });
     }
 
     /**
-     * Register the QuantumView class
+     * Register the QuantumView class.
      *
      * @return void
      */
@@ -83,12 +84,13 @@ class UpsApiServiceProvider extends ServiceProvider
     {
         $this->app->singleton('ups.quantum-view', function (Container $app) {
             $config = $app->config->get('ups');
+
             return new QuantumView($config['access_key'], $config['user_id'], $config['password']);
         });
     }
 
     /**
-     * Register the Tracking class
+     * Register the Tracking class.
      *
      * @return void
      */
@@ -96,12 +98,13 @@ class UpsApiServiceProvider extends ServiceProvider
     {
         $this->app->singleton('ups.tracking', function (Container $app) {
             $config = $app->config->get('ups');
+
             return new Tracking($config['access_key'], $config['user_id'], $config['password']);
         });
     }
 
     /**
-     * Register the Rate class
+     * Register the Rate class.
      *
      * @return void
      */
@@ -109,12 +112,13 @@ class UpsApiServiceProvider extends ServiceProvider
     {
         $this->app->singleton('ups.rate', function (Container $app) {
             $config = $app->config->get('ups');
+
             return new Rate($config['access_key'], $config['user_id'], $config['password']);
         });
     }
 
     /**
-     * Register the TimeInTransit class
+     * Register the TimeInTransit class.
      *
      * @return void
      */
@@ -122,12 +126,13 @@ class UpsApiServiceProvider extends ServiceProvider
     {
         $this->app->singleton('ups.time-in-transit', function (Container $app) {
             $config = $app->config->get('ups');
+
             return new TimeInTransit($config['access_key'], $config['user_id'], $config['password']);
         });
     }
 
     /**
-     * Register the Locator class
+     * Register the Locator class.
      *
      * @return void
      */
@@ -135,12 +140,13 @@ class UpsApiServiceProvider extends ServiceProvider
     {
         $this->app->singleton('ups.locator', function (Container $app) {
             $config = $app->config->get('ups');
+
             return new Locator($config['access_key'], $config['user_id'], $config['password']);
         });
     }
 
     /**
-     * Register the Tradeability class
+     * Register the Tradeability class.
      *
      * @return void
      */
@@ -148,6 +154,7 @@ class UpsApiServiceProvider extends ServiceProvider
     {
         $this->app->singleton('ups.tradeability', function (Container $app) {
             $config = $app->config->get('ups');
+
             return new Tradeability($config['access_key'], $config['user_id'], $config['password']);
         });
     }
