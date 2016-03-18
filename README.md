@@ -5,9 +5,8 @@ Laravel UPS Api
 
 [![Build Status](https://travis-ci.org/ptondereau/Laravel-UPS-Api.svg?branch=master)](https://travis-ci.org/ptondereau/Laravel-UPS-Api)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ptondereau/Laravel-UPS-Api/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/ptondereau/Laravel-UPS-Api/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/Ptondereau/Laravel-UPS-Api/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/Ptondereau/Laravel-UPS-Api/?branch=master)
 [![StyleCI](https://styleci.io/repos/54156171/shield)](https://styleci.io/repos/54156171)
-[![Code Climate](https://codeclimate.com/github/ptondereau/Laravel-UPS-Api/badges/gpa.svg)](https://codeclimate.com/github/Ptondereau/Laravel-UPS-Api)
+[![Code Climate](https://codeclimate.com/github/ptondereau/Laravel-UPS-Api/badges/gpa.svg)](https://codeclimate.com/github/ptondereau/Laravel-UPS-Api)
 [![Latest Stable Version](https://poser.pugx.org/ptondereau/laravel-ups-api/v/stable)](https://packagist.org/packages/Ptondereau/laravel-ups-api)
 [![Latest Unstable Version](https://poser.pugx.org/ptondereau/laravel-ups-api/v/unstable)](https://packagist.org/packages/Ptondereau/laravel-ups-api)
 [![License](https://poser.pugx.org/ptondereau/laravel-ups-api/license)](https://packagist.org/packages/Ptondereau/laravel-ups-api)
