@@ -1,6 +1,6 @@
 <?php
 
-namespace Rooferz\Tests;
+namespace Rooferz\Tests\LaravelUpsApi;
 
 use Rooferz\LaravelUpsApi\UpsApiServiceProvider;
 use GrahamCampbell\TestBench\AbstractPackageTestCase;
