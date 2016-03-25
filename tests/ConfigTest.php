@@ -13,16 +13,16 @@ class ConfigTest extends TestCase
 {
     public function testAccessKeyConfig()
     {
-        $this->assertEquals(Config::get('ups.access_key'), null);
+        $this->assertEquals(Config::get('ups.access_key'), 'test');
     }
 
     public function testUserIdConfig()
     {
-        $this->assertEquals(Config::get('ups.user_id'), null);
+        $this->assertEquals(Config::get('ups.user_id'), 'test');
     }
 
     public function testPasswordConfig()
     {
-        $this->assertEquals(Config::get('ups.password'), null);
+        $this->assertEquals(Config::get('ups.password'), 'test');
     }
 }
