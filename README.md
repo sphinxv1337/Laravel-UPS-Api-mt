@@ -1,7 +1,7 @@
 Laravel UPS Api
 =================
 
-## For Laravel 5.1 & 5.2
+## For Laravel 5.1+
 
 [![Build Status](https://travis-ci.org/ptondereau/Laravel-UPS-Api.svg?branch=master)](https://travis-ci.org/ptondereau/Laravel-UPS-Api)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ptondereau/Laravel-UPS-Api/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/ptondereau/Laravel-UPS-Api/?branch=master)
@@ -36,7 +36,7 @@ Instead, you may of course manually update your require block and run `composer 
 
 Once Laravel UPS Api is installed, you need to register the service provider. Open up `config/app.php` and add the following to the `providers` key.
 
-p* `'Ptondereau\LaravelUpsApi\UpsApiServiceProvider'`
+* `'Ptondereau\LaravelUpsApi\UpsApiServiceProvider'`
 
 You can register the all or some Ups facade in the `aliases` key of your `config/app.php` file if you like.
 
