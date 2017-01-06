@@ -13,6 +13,7 @@ use Ups\Rate;
 use Ups\TimeInTransit;
 use Ups\Tracking;
 use Ups\Tradeability;
+use Ups\Shipping;
 
 /**
  * This is the Ups Api service provider class.
@@ -45,6 +46,7 @@ class UpsApiServiceProvider extends ServiceProvider
         $this->registerTimeInTransit();
         $this->registerLocator();
         $this->registerTradeability();
+        $this->registerShipping();
     }
 
     /**
@@ -73,7 +75,12 @@ class UpsApiServiceProvider extends ServiceProvider
         $this->app->singleton('ups.address-validation', function (Container $app) {
             $config = $app->config->get('ups');
 
-            return new AddressValidation($config['access_key'], $config['user_id'], $config['password']);
+            return new AddressValidation(
+                $config['access_key'],
+                $config['user_id'],
+                $config['password'],
+                $config['sandbox']
+            );
         });
     }
 
@@ -87,7 +94,12 @@ class UpsApiServiceProvider extends ServiceProvider
         $this->app->singleton('ups.quantum-view', function (Container $app) {
             $config = $app->config->get('ups');
 
-            return new QuantumView($config['access_key'], $config['user_id'], $config['password']);
+            return new QuantumView(
+                $config['access_key'],
+                $config['user_id'],
+                $config['password'],
+                $config['sandbox']
+            );
         });
     }
 
@@ -101,7 +113,12 @@ class UpsApiServiceProvider extends ServiceProvider
         $this->app->singleton('ups.tracking', function (Container $app) {
             $config = $app->config->get('ups');
 
-            return new Tracking($config['access_key'], $config['user_id'], $config['password']);
+            return new Tracking(
+                $config['access_key'],
+                $config['user_id'],
+                $config['password'],
+                $config['sandbox']
+            );
         });
     }
 
@@ -115,7 +132,12 @@ class UpsApiServiceProvider extends ServiceProvider
         $this->app->singleton('ups.rate', function (Container $app) {
             $config = $app->config->get('ups');
 
-            return new Rate($config['access_key'], $config['user_id'], $config['password']);
+            return new Rate(
+                $config['access_key'],
+                $config['user_id'],
+                $config['password'],
+                $config['sandbox']
+            );
         });
     }
 
@@ -129,7 +151,12 @@ class UpsApiServiceProvider extends ServiceProvider
         $this->app->singleton('ups.time-in-transit', function (Container $app) {
             $config = $app->config->get('ups');
 
-            return new TimeInTransit($config['access_key'], $config['user_id'], $config['password']);
+            return new TimeInTransit(
+                $config['access_key'],
+                $config['user_id'],
+                $config['password'],
+                $config['sandbox']
+            );
         });
     }
 
@@ -143,7 +170,12 @@ class UpsApiServiceProvider extends ServiceProvider
         $this->app->singleton('ups.locator', function (Container $app) {
             $config = $app->config->get('ups');
 
-            return new Locator($config['access_key'], $config['user_id'], $config['password']);
+            return new Locator(
+                $config['access_key'],
+                $config['user_id'],
+                $config['password'],
+                $config['sandbox']
+            );
         });
     }
 
@@ -157,7 +189,31 @@ class UpsApiServiceProvider extends ServiceProvider
         $this->app->singleton('ups.tradeability', function (Container $app) {
             $config = $app->config->get('ups');
 
-            return new Tradeability($config['access_key'], $config['user_id'], $config['password']);
+            return new Tradeability(
+                $config['access_key'],
+                $config['user_id'],
+                $config['password'],
+                $config['sandbox']
+            );
+        });
+    }
+
+    /**
+     * Register the Tradeability class.
+     *
+     * @return void
+     */
+    protected function registerShipping()
+    {
+        $this->app->singleton('ups.shipping', function (Container $app) {
+            $config = $app->config->get('ups');
+
+            return new Shipping(
+                $config['access_key'],
+                $config['user_id'],
+                $config['password'],
+                $config['sandbox']
+            );
         });
     }
 
@@ -176,6 +232,7 @@ class UpsApiServiceProvider extends ServiceProvider
             'ups.time-in-transit',
             'ups.locator',
             'ups.tradeability',
+            'ups.shipping',
         ];
     }
 }
