@@ -14,6 +14,7 @@ use Ups\Shipping;
 use Ups\TimeInTransit;
 use Ups\Tracking;
 use Ups\Tradeability;
+use Psr\Http\Message\ServerRequestInterface;
 
 /**
  * This is the Ups Api service provider class.
@@ -79,7 +80,9 @@ class UpsApiServiceProvider extends ServiceProvider
                 $config['access_key'],
                 $config['user_id'],
                 $config['password'],
-                $config['sandbox']
+                $config['sandbox'],
+                null,
+                $app->make('log')
             );
         });
     }
@@ -98,7 +101,9 @@ class UpsApiServiceProvider extends ServiceProvider
                 $config['access_key'],
                 $config['user_id'],
                 $config['password'],
-                $config['sandbox']
+                $config['sandbox'],
+                null,
+                $app->make('log')
             );
         });
     }
@@ -117,7 +122,9 @@ class UpsApiServiceProvider extends ServiceProvider
                 $config['access_key'],
                 $config['user_id'],
                 $config['password'],
-                $config['sandbox']
+                $config['sandbox'],
+                null,
+                $app->make('log')
             );
         });
     }
@@ -136,7 +143,9 @@ class UpsApiServiceProvider extends ServiceProvider
                 $config['access_key'],
                 $config['user_id'],
                 $config['password'],
-                $config['sandbox']
+                $config['sandbox'],
+                null,
+                $app->make('log')
             );
         });
     }
@@ -155,7 +164,9 @@ class UpsApiServiceProvider extends ServiceProvider
                 $config['access_key'],
                 $config['user_id'],
                 $config['password'],
-                $config['sandbox']
+                $config['sandbox'],
+                null,
+                $app->make('log')
             );
         });
     }
@@ -174,7 +185,9 @@ class UpsApiServiceProvider extends ServiceProvider
                 $config['access_key'],
                 $config['user_id'],
                 $config['password'],
-                $config['sandbox']
+                $config['sandbox'],
+                null,
+                $app->make('log')
             );
         });
     }
@@ -193,7 +206,9 @@ class UpsApiServiceProvider extends ServiceProvider
                 $config['access_key'],
                 $config['user_id'],
                 $config['password'],
-                $config['sandbox']
+                $config['sandbox'],
+                null,
+                $app->make('log')
             );
         });
     }
@@ -212,7 +227,9 @@ class UpsApiServiceProvider extends ServiceProvider
                 $config['access_key'],
                 $config['user_id'],
                 $config['password'],
-                $config['sandbox']
+                $config['sandbox'],
+                null,
+                $app->make('log')
             );
         });
     }
