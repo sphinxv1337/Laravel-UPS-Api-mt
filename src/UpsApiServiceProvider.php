@@ -14,7 +14,6 @@ use Ups\Shipping;
 use Ups\TimeInTransit;
 use Ups\Tracking;
 use Ups\Tradeability;
-use Psr\Http\Message\ServerRequestInterface;
 
 /**
  * This is the Ups Api service provider class.
