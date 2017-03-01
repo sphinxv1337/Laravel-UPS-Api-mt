@@ -10,7 +10,7 @@ use Ups\QuantumView;
 /**
  * This is the UpsQuantumViewTest facade test class.
  *
- * @author Pierre Tondereau <pierre@doers.fr>
+ * @author Pierre Tondereau <pierre.tondereau@gmail.com>
  */
 class UpsQuantumViewTest extends TestCase
 {

@@ -8,9 +8,9 @@ use Ptondereau\Tests\LaravelUpsApi\TestCase;
 use Ups\Shipping;
 
 /**
- * This is the UpsTradeabilityTest facade test class.
+ * This is the UpsShippingTest facade test class.
  *
- * @author Pierre Tondereau <pierre@doers.fr>
+ * @author Pierre Tondereau <pierre.tondereau@gmail.com>
  */
 class UpsShippingTest extends TestCase
 {

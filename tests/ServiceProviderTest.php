@@ -8,6 +8,7 @@ use Ups\Locator;
 use Ups\QuantumView;
 use Ups\Rate;
 use Ups\Shipping;
+use Ups\SimpleAddressValidation;
 use Ups\TimeInTransit;
 use Ups\Tracking;
 use Ups\Tradeability;
@@ -15,7 +16,7 @@ use Ups\Tradeability;
 /**
  * This is the service provider test class.
  *
- * @author Pierre Tondereau <pierre@doers.fr>
+ * @author Pierre Tondereau <pierre.tondereau@gmail.com>
  */
 class ServiceProviderTest extends TestCase
 {
@@ -24,6 +25,11 @@ class ServiceProviderTest extends TestCase
     public function testAddressValidationIsInjectable()
     {
         $this->assertIsInjectable(AddressValidation::class);
+    }
+
+    public function testSimpleAddressValidationIsInjectable()
+    {
+        $this->assertIsInjectable(SimpleAddressValidation::class);
     }
 
     public function testQuantumViewIsInjectable()

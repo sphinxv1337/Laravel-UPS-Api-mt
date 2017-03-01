@@ -10,7 +10,7 @@ use Ups\Rate;
 /**
  * This is the UpsRateTest facade test class.
  *
- * @author Pierre Tondereau <pierre@doers.fr>
+ * @author Pierre Tondereau <pierre.tondereau@gmail.com>
  */
 class UpsRateTest extends TestCase
 {

@@ -10,7 +10,7 @@ use Ups\Locator;
 /**
  * This is the UpsLocatorTest facade test class.
  *
- * @author Pierre Tondereau <pierre@doers.fr>
+ * @author Pierre Tondereau <pierre.tondereau@gmail.com>
  */
 class UpsLocatorTest extends TestCase
 {

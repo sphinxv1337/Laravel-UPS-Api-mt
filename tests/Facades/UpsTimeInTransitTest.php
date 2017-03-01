@@ -10,7 +10,7 @@ use Ups\TimeInTransit;
 /**
  * This is the UpsTimeInTransitTest facade test class.
  *
- * @author Pierre Tondereau <pierre@doers.fr>
+ * @author Pierre Tondereau <pierre.tondereau@gmail.com>
  */
 class UpsTimeInTransitTest extends TestCase
 {

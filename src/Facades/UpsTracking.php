@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Facade;
 /**
  * This is the Tracking facade class.
  *
- * @author Pierre Tondereau <pierre@doers.fr>
+ * @author Pierre Tondereau <pierre.tondereau@gmail.com>
  */
 class UpsTracking extends Facade
 {

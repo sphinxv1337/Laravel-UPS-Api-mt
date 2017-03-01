@@ -3,16 +3,16 @@
 namespace Ptondereau\Tests\LaravelUpsApi\Facades;
 
 use GrahamCampbell\TestBenchCore\FacadeTrait;
-use Ptondereau\LaravelUpsApi\Facades\UpsAddressValidation;
+use Ptondereau\LaravelUpsApi\Facades\UpsSimpleAddressValidation;
 use Ptondereau\Tests\LaravelUpsApi\TestCase;
-use Ups\AddressValidation;
+use Ups\SimpleAddressValidation;
 
 /**
- * This is the UpsAddressValidationTest facade test class.
+ * This is the UpsSimpleAddressValidationTest facade test class.
  *
  * @author Pierre Tondereau <pierre.tondereau@gmail.com>
  */
-class UpsAddressValidationTest extends TestCase
+class UpsSimpleAddressValidationTest extends TestCase
 {
     use FacadeTrait;
 
@@ -23,7 +23,7 @@ class UpsAddressValidationTest extends TestCase
      */
     protected function getFacadeAccessor()
     {
-        return 'ups.address-validation';
+        return 'ups.simple-address-validation';
     }
 
     /**
@@ -33,7 +33,7 @@ class UpsAddressValidationTest extends TestCase
      */
     protected function getFacadeClass()
     {
-        return UpsAddressValidation::class;
+        return UpsSimpleAddressValidation::class;
     }
 
     /**
@@ -43,6 +43,6 @@ class UpsAddressValidationTest extends TestCase
      */
     protected function getFacadeRoot()
     {
-        return AddressValidation::class;
+        return SimpleAddressValidation::class;
     }
 }

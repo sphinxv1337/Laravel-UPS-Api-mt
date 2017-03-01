@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Config;
 /**
  * This is the config test class.
  *
- * @author Pierre Tondereau <pierre@doers.fr>
+ * @author Pierre Tondereau <pierre.tondereau@gmail.com>
  */
 class ConfigTest extends TestCase
 {

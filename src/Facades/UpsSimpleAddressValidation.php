@@ -5,11 +5,11 @@ namespace Ptondereau\LaravelUpsApi\Facades;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * This is the UpsAddressValidation facade class.
+ * This is the UpsSimpleAddressValidation facade class.
  *
  * @author Pierre Tondereau <pierre.tondereau@gmail.com>
  */
-class UpsAddressValidation extends Facade
+class UpsSimpleAddressValidation extends Facade
 {
     /**
      * Get the registered name of the component.
@@ -18,6 +18,6 @@ class UpsAddressValidation extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'ups.address-validation';
+        return 'ups.simple-address-validation';
     }
 }

@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Facade;
 /**
  * This is the QuantumView facade class.
  *
- * @author Pierre Tondereau <pierre@doers.fr>
+ * @author Pierre Tondereau <pierre.tondereau@gmail.com>
  */
 class UpsQuantumView extends Facade
 {

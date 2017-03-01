@@ -11,6 +11,7 @@ use Ups\Locator;
 use Ups\QuantumView;
 use Ups\Rate;
 use Ups\Shipping;
+use Ups\SimpleAddressValidation;
 use Ups\TimeInTransit;
 use Ups\Tracking;
 use Ups\Tradeability;
@@ -18,7 +19,7 @@ use Ups\Tradeability;
 /**
  * This is the Ups Api service provider class.
  *
- * @author Pierre Tondereau <pierre@doers.fr>
+ * @author Pierre Tondereau <pierre.tondereau@gmail.com>
  */
 class UpsApiServiceProvider extends ServiceProvider
 {
@@ -40,6 +41,7 @@ class UpsApiServiceProvider extends ServiceProvider
     public function register()
     {
         $this->registerAddressValidation();
+        $this->registerSimpleAddressValidation();
         $this->registerQuantumView();
         $this->registerTracking();
         $this->registerRate();
@@ -76,6 +78,27 @@ class UpsApiServiceProvider extends ServiceProvider
             $config = $app->config->get('ups');
 
             return new AddressValidation(
+                $config['access_key'],
+                $config['user_id'],
+                $config['password'],
+                $config['sandbox'],
+                null,
+                $app->make('log')
+            );
+        });
+    }
+
+    /**
+     * Register the SimpleAddressValidation class.
+     *
+     * @return void
+     */
+    protected function registerSimpleAddressValidation()
+    {
+        $this->app->singleton('ups.simple-address-validation', function (Container $app) {
+            $config = $app->config->get('ups');
+
+            return new SimpleAddressValidation(
                 $config['access_key'],
                 $config['user_id'],
                 $config['password'],
@@ -242,6 +265,7 @@ class UpsApiServiceProvider extends ServiceProvider
     {
         return [
             'ups.address-validation',
+            'ups.simple-address-validation',
             'ups.quantum-view',
             'ups.tracking',
             'ups.rate',

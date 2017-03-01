@@ -10,7 +10,7 @@ use Ups\Tracking;
 /**
  * This is the UpsTrackingTest facade test class.
  *
- * @author Pierre Tondereau <pierre@doers.fr>
+ * @author Pierre Tondereau <pierre.tondereau@gmail.com>
  */
 class UpsTrackingTest extends TestCase
 {
