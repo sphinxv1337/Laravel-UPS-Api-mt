@@ -1,7 +1,7 @@
 Laravel UPS Api
 =================
 
-## For Laravel 5.5+
+## For Laravel 5.5+ or 6
 
 [![Build Status](https://travis-ci.org/ptondereau/Laravel-UPS-Api.svg?branch=master)](https://travis-ci.org/ptondereau/Laravel-UPS-Api)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ptondereau/Laravel-UPS-Api/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/ptondereau/Laravel-UPS-Api/?branch=master)
@@ -38,14 +38,15 @@ Once Laravel UPS Api is installed, you need to register the service provider. Op
 
 You can register the all or some Ups facade in the `aliases` key of your `config/app.php` file if you like.
 
-* `'UPSAddressValidator' => 'Ptondereau\LaravelUpsApi\Facades\UpsAddressValidator'`
-* `'UPSLocator' => 'Ptondereau\LaravelUpsApi\Facades\UpsLocator'`
-* `'UPSQuantumView' => 'Ptondereau\LaravelUpsApi\Facades\UpsQuantumView'`
-* `'UPSRate' => 'Ptondereau\LaravelUpsApi\Facades\UpsRate'`
-* `'UPSTimeInTransit' => 'Ptondereau\LaravelUpsApi\Facades\UpsTimeInTransit'`
-* `'UPSTracking' => 'Ptondereau\LaravelUpsApi\Facades\UpsTracking'`
-* `'UPSTradeability' => 'Ptondereau\LaravelUpsApi\Facades\UpsTradeability'`
-* `'UPSShipping' => 'Ptondereau\LaravelUpsApi\Facades\UpsShipping'`
+* `'UpsAddressValidator' => 'Ptondereau\LaravelUpsApi\Facades\UpsAddressValidator'`
+* `'UpsLocator' => 'Ptondereau\LaravelUpsApi\Facades\UpsLocator'`
+* `'UpsQuantumView' => 'Ptondereau\LaravelUpsApi\Facades\UpsQuantumView'`
+* `'UpsRate' => 'Ptondereau\LaravelUpsApi\Facades\UpsRate'`
+* `'UpsTimeInTransit' => 'Ptondereau\LaravelUpsApi\Facades\UpsTimeInTransit'`
+* `'UpsTracking' => 'Ptondereau\LaravelUpsApi\Facades\UpsTracking'`
+* `'UpsTradeability' => 'Ptondereau\LaravelUpsApi\Facades\UpsTradeability'`
+* `'UpsShipping' => 'Ptondereau\LaravelUpsApi\Facades\UpsShipping'`
+* `'UpsRateInTransit' => 'Ptondereau\LaravelUpsApi\Facades\UpsRateInTransit'`
 
 
 
