@@ -1,7 +1,7 @@
 Laravel UPS Api
 =================
 
-## For Laravel 5.5+ or 6
+## For Laravel 5.5,6 and 7
 
 [![Build Status](https://travis-ci.org/ptondereau/Laravel-UPS-Api.svg?branch=master)](https://travis-ci.org/ptondereau/Laravel-UPS-Api)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ptondereau/Laravel-UPS-Api/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/ptondereau/Laravel-UPS-Api/?branch=master)
@@ -84,7 +84,7 @@ There are other classes in this package that are not documented here. This is be
 
 ## Security
 
-If you discover a security vulnerability within this package, please send an e-mail to Pierre Tondereau at me@pierre-tondereau.com. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within this package, please send an e-mail to Pierre Tondereau at pierre.tondereau@gmail.com. All security vulnerabilities will be promptly addressed.
 
 
 ## License
