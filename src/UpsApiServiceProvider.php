@@ -24,9 +24,9 @@ use Ups\Tradeability;
  */
 class UpsApiServiceProvider extends ServiceProvider
 {
-    public function boot(): void
+    public function boot(string $config = 'default'): void
     {
-        $this->setupConfig();
+        $this->setupConfig($config);
     }
 
     public function register(): void
@@ -43,7 +43,7 @@ class UpsApiServiceProvider extends ServiceProvider
         $this->registerRateTimeInTransit();
     }
 
-    protected function setupConfig(): void
+    protected function setupConfig(string $config): void
     {
         $source = realpath(__DIR__.'/../config/ups.php');
         if ($this->app instanceof LaravelApplication && $this->app->runningInConsole()) {
@@ -51,7 +51,7 @@ class UpsApiServiceProvider extends ServiceProvider
         } elseif ($this->app instanceof LumenApplication) {
             $this->app->configure('ups');
         }
-        $this->mergeConfigFrom($source, 'ups');
+        $this->mergeConfigFrom($source, 'ups.' . $config);
     }
 
     protected function registerAddressValidation(): void
